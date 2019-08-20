@@ -1,0 +1,34 @@
+3.1. Set your Treasure Data API key as an environment variable
+Before launching Jupyter notebook, set your API key as an environment variable on your terminal. Your TD API key can be found in the TD console profile page.
+
+
+export TD_API_KEY="1234/abcde..." # Replace to your appropriate key
+
+
+3.2. Configuring Jupyter notebook
+
+
+Before installing Python packages, create virtualenv in a terminal.
+
+
+ pip install --upgrade virtualenv # if needed
+ cd your-project # Rename with a directory name you created
+ virtualenv --python python3 venv
+
+
+After creating the virtual environment, activate the virtualenv. For macOS and Linux:
+
+
+ source venv/bin/activate
+
+
+After activating virtualenv, you can install pandas-td via pip as follows:
+
+
+ pip install pandas-td
+
+
+You also need to install Jupyter and related packages:
+
+
+ pip install jupyter notebook matplotlib seaborn scikit-learn statsmodels
